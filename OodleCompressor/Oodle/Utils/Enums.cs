@@ -19,7 +19,7 @@ namespace OodleCompressor.Oodle.Utils
         BitKnit = 10,
         Selkie = 11,
         Hydra = 12,
-        Leviathazn = 13
+        Leviathan = 13
     }
 
     public enum OodleCompressionLevel : ulong
