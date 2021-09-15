@@ -15,7 +15,7 @@ namespace OodleCompressor.Oodle
                     File.ReadAllBytes(decompressedFilePath).Length, // Get decompressed length
                     new byte[(int) (uint) File.ReadAllBytes(decompressedFilePath).Length + 274U *
                         (((uint) File.ReadAllBytes(decompressedFilePath).Length + 262143U) / 262144U)], // Get compressed size
-                    OodleCompressionLevel.Level5, 0U, 0U, 0U, 0);
+                    OodleCompressionLevel.Optimal5, 0U, 0U, 0U, 0);
             }
             catch (AccessViolationException)
             {
@@ -23,7 +23,7 @@ namespace OodleCompressor.Oodle
             }
             
             File.WriteAllBytes(outputPath, OodleStream.OodleCompress(File.ReadAllBytes(decompressedFilePath), File.ReadAllBytes(decompressedFilePath).Length,
-                OodleFormat.Kraken, OodleCompressionLevel.Level5, @uint)); // Writing the data
+                OodleFormat.Kraken, OodleCompressionLevel.Optimal5, @uint)); // Writing the data
         }
     }
 }
