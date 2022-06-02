@@ -1,14 +1,15 @@
-# Oodle Compressor Made In C#
+# Oodle Bindings for C#
 
-# DOES NOT HAVE DECOMPRESSION SUPPORT
+## What is Oodle?
+
+Oodle is a compression algorithm owned by EPIC Games. It is used to compress and decompress game files in numerous games. Meaning, if you want to edit a game's files, you need a compressor to write to it.
+
+## What can you do with this repository?
+
+With this repository, you can use Oodle in your own C# projects. This includes Compression and Decompression support useful for storing lots of data, or as previously stated, writing to a game's files which uses Oodle.
 
 Few things to note:
-- If you would like to make a change or add something to this, make a pull request.
 - If you would like to use this in your own project, please give credit.
-- If you don't know how to compile it, use a pre-compiled version in the releases tab.
-- This does use Oodle 2.5, if you want it to work on a newer version, either rename the dll to 'oo2core_5_win64.dll' or change the name in the 'OodleStream' class.
+- If you don't know how to make a compressor with it, use a pre-compiled version in the releases tab.
+- This uses Oodle 2.5, if you want it to work on a newer version, either rename the dll to 'oo2core_5_win64.dll' or change the name in the 'Imports.cs' class.
 - I WILL NOT BE PROVIDING AN OODLE DLL DUE TO LEGAL REASONS!!!
-
-
-# CREDIT
-- [DTZxPorter - SirenLib](https://github.com/dtzxporter/Siren/blob/f2438c690097268186e0c60d4457d68fcd508576/src/SirenLib/siren.h#L22) (for correct enums that match up with ue4)
