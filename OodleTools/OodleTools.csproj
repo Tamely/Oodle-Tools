@@ -7,8 +7,8 @@
         <ProjectGuid>{995E4203-3D3B-46BA-86C1-C92500129E35}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>OodleCompressor</RootNamespace>
-        <AssemblyName>OodleCompressor</AssemblyName>
+        <RootNamespace>OodleTools</RootNamespace>
+        <AssemblyName>OodleTools</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <LangVersion>latest</LangVersion>
@@ -44,10 +44,11 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Oodle\Oodle.cs" />
-        <Compile Include="Oodle\Utils\Enums.cs" />
-        <Compile Include="Oodle\Utils\OodleStream.cs" />
-        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Imports.cs" />
+        <Compile Include="Oodle.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Properties" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
